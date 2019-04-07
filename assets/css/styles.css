@@ -1,0 +1,11 @@
+@media (min-width:768px) {
+  .col {
+    padding-bottom:120px;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+}
+

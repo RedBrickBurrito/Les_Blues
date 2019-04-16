@@ -38,60 +38,95 @@
             </nav>  
         </div>
     </div>
-    <div>
-       
-        <h2 style="margin: 5px;">Carrito de compras</h2>
 
-        
-        <table style="width:100%">
-
-            <tr>
-                <th></th>
-                <th></th> 
-                <th>Precio</th>
-
-            </tr>
-
-            <tr>
-                <th><hr></th>
-                <th><hr></th> 
-                <th><hr></th>
-
-            </tr>
-
-            <tr>
-                <td>
-                    <img class= "img-fluid" style="height: 150px;width: 102px;margin:28px;" src="assets/img/Mona_Lisa.jpg">
-                </td>
-                <td>Información general de la pintura</td>
-                <td>$ 1200.99</td>
-            </tr>
-            <tr>
-                <td>
-                    <img class= "img-fluid" style="height:170px;width:140px; margin: 28px;"src="assets/img/napoleon-bonaparte-on-horseback-war-is-hell-store.jpg">
-                </td>
-                <td>Información general de la pintura</td>
-                <td>$ 400.00</td>
-            </tr>
-            <tr>
-                <td>
-                    <img class= "img-fluid" style="height:170px;width:140px; margin: 28px;" src="assets/img/300px-Meisje_met_de_parel.jpg">
-                </td>
-                <td>Información general de la pintura</td>
-                <td>$ 200.00</td>
-            </tr>
-
-            <tr>
-                <th></th>
-                <th></th> 
-                <th><input style="background-color:rgb(125,11,4);color: white;font-family:'Open Sans', sans-serif;" type="button" value="Pagar"></th>
-
-            </tr>
-
+    <div style="border-color: gray; border-width: 1px; border-style: solid; overflow: hidden; " >
+        <h1 style="margin-left:20px; ">Selecciones método de pago</h1>
+        <br>
+        <div style="border-color: gray; border-width: 1px; border-style: solid; margin-left: 20px; width: 1400px; float: left;">
+            <h1 style="margin-left: 10px;">Sus tarjetas de débito o crédito</h1>
             
+            <hr>
+            <table style="width:100%">
+
+            <tr>
+                <th><input type="radio" name="transporte" value="1" style="margin-left: 10px;"> VISA</th>
+                <th>Terminando en 0934</th> 
+                <th>Nombre</th>
+                <th>03/08/17</th>
+
+            </tr>
+                
+            <tr>
+                <th style="margin-left: 10px;"> CW:</th>
+                <th><input type="text" value="" id="texto" /></th> 
+                <th></th>
+                <th></th>
+
+            </tr>
             </table>
+            <br>
+        </div>
+
+        <div style="border-color: gray; border-width: 1px; border-style: solid;margin-left: 30px; float: left;width: 290px;">
+            <input style="background-color:rgb(125,11,4);color: white;font-family:'Open Sans', sans-serif;" type="button" value="Continuar">
+            <p style="margin-left: 5px;">Continúe con su proceso de pago</p>
+        </div>
+        
+        <div>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <h1>Otro método de pago</h1>
+            <hr>
+            <input style="margin-left: 20px;" type="radio" name="transporte" value="1"> Tarjeta de crédito
+            
+            <img class= "img-fluid" style="height: 30px;width: 50px;margin:28px;" src="assets/img/mastercard.png">
+
+            <img class= "img-fluid" style="height: 30px;width: 50px;margin:28px;" src="assets/img/Former_Visa_(company)_logo.svg.png">
+
+            <img class= "img-fluid" style="height: 30px;width: 50px;margin:28px;" src="assets/img/americanexpress.png">
+            
+            
+
+            <br>
+
+            <input style="margin-left: 20px;"type="radio" name="transporte" value="2"> Tarjeta de débito
+            <div style="margin-left: 35px;">
+            <select name="transporte">
+
+            <option>Escoge un banco</option>
+
+            <option>VISA</option>
+
+            <option>BBVA</option>
+
+            </select>
+            </div>
+
+            <br>
+
+            <input style="margin-left: 20px;"type="radio" name="transporte" value="3"> Net Bank
+            <div style="margin-left: 35px;">
+            <select name="transporte">
+
+            <option>Escoge un banco</option>
+
+            <option>Visa</option>
+
+            <option>BBVA</option>
+
+            </select>
+            </div>
+            <hr>
+            <input style="margin-left: 20px;"type="radio" name="transporte" value="3"> Pago en persona
+            <br>
+            <hr>
+
+        </div>
 
     </div>
+   
     
 
     <div class="footer-basic" style="height:203px;width:100%;">

@@ -46,24 +46,67 @@
     	<br>
     	<hr style="border-width: 2px;">
     </div>
-    <div>
-    	<img class= "img-fluid" style="height: 500px;width: 350px;margin:28px;" src="assets/img/Mona_Lisa.jpg"/>
+    <div style="width: 50%; float: left;">
+    	<img class= "img-fluid" style="height: 450px;width: 300px;margin:28px;" src="assets/img/Mona_Lisa.jpg"/>
+    	<div>
+    		<table style="width:100%; margin-left: 28px;">
+
+	            <tr>
+	                <th>Autor/pseudónimo:</th>
+	                <th>Leonardo da Vinci</th>
+	            </tr>
+	            <tr>
+	                <th>Año:</th>
+	                <th>1503-1519</th>
+	            </tr>
+	            <tr>
+	                <th>Precio:</th>
+	                <th>$713 millones de dólares</th>
+	            </tr>
+	            <tr>
+	                <th>Técnica:</th>
+	                <th>Sfumato</th>
+	            </tr>
+	            <tr>
+	                <th>Corriente:</th>
+	                <th>Renacentista</th>
+	            </tr>
+	            <tr>
+	                <th>Medidas:</th>
+	                <th>77 × 53 cm</th>
+	            </tr>
+
+        	</table>    		
+    	</div>
     </div> 
-    <div>
+    <div >
     	<h1>La Mona Lisa (La Gioconda)</h1> <h4>Reseña</h4> <p>La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci. Fue adquirida por el rey Francisco I de Francia a comienzos del siglo XVI y desde entonces es propiedad del Estado Francés.
     	Es un óleo sobre tabla de álamo de 77 × 53 cm, pintado entre 1503 y 1519,3​ y retocado varias veces por el autor. Se considera el ejemplo más logrado de sfumato, técnica muy característica de Leonardo, si bien actualmente su colorido original es menos perceptible por el oscurecimiento de los barnices. El cuadro está protegido por múltiples sistemas de seguridad y ambientado a temperatura estable para su preservación óptima.4​ Es revisado constantemente para verificar y prevenir su deterioro. </p>
     </div>
-    <div>
-    	<label style="text-align: left;">Autor/Pseudónimo</label>
-    </div>
     
-    <div style="text-align: left;">
+    
+    <div style="text-align: center;">
     	<br>
     	<br>
     	<br>
     	<br>
     	<input name="button2" type="button" 
 			onclick='alert("Su cumpra se ha guardado en su carrito de compras.")' value=" Agregar al carrito " style="background-color:rgb(125,11,4);color: white;font-family:'Open Sans', sans-serif; border-radius: 20px;font-size: 24px; color: #fff; box-shadow: none; border: none;text-shadow: none;" />
+
+		<form>
+		  <p class="clasificacion">
+		    <input id="radio1" type="radio" name="estrellas" value="5" style="display: none;"><!--
+		    --><label for="radio1">★</label><!--
+		    --><input style="display: none;"id="radio2" type="radio" name="estrellas" value="4"><!--
+		    --><label for="radio2">★</label><!--
+		    --><input id="radio3" style="display: none;" type="radio" name="estrellas" value="3"><!--
+		    --><label for="radio3">★</label><!--
+		    --><input id="radio4" type="radio" name="estrellas" style="display: none;" value="2"><!--
+		    --><label for="radio4">★</label><!--
+		    --><input id="radio5" style="display: none;" type="radio" name="estrellas" value="1"><!--
+		    --><label for="radio5">★</label>
+		  </p>
+		</form>
 
     	
 

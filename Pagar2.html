@@ -20,113 +20,106 @@
 </head>
 
 <body style="margin: 0; margin-bottom: 40px;">
-        <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
-            <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
-                <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a><button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1"
-                        style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1" style="width:inherit;">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
-                        </ul>
-                        <form class="form-inline mr-auto" target="_self">
-                            <div class="form-group"><label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label><input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;"></div>
-                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="#" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
-                </div>
-            </nav>  
-        </div>
-    </div>
-
-    <div style="border-color: gray; border-width: 1px; border-style: solid; overflow: hidden; " >
-        <h1 style="margin-left:20px; ">Selecciones método de pago</h1>
-        <br>
-        <div style="border-color: gray; border-width: 1px; border-style: solid; margin-left: 20px; width: 1400px; float: left;">
-            <h1 style="margin-left: 10px;">Sus tarjetas de débito o crédito</h1>
-            
-            <hr>
-            <table style="width:100%">
-
-            <tr>
-                <th><input type="radio" name="transporte" value="1" style="margin-left: 10px;"> VISA</th>
-                <th>Terminando en 0934</th> 
-                <th>Nombre</th>
-                <th>03/08/17</th>
-
-            </tr>
-                
-            <tr>
-                <th style="margin-left: 10px;"> CW:</th>
-                <th><input type="text" value="" id="texto" /></th> 
-                <th></th>
-                <th></th>
-
-            </tr>
-            </table>
-            <br>
-        </div>
-
-        <div style="border-color: gray; border-width: 1px; border-style: solid;margin-left: 30px; float: left;width: 290px;">
-            <input style="background-color:rgb(125,11,4);color: white;font-family:'Open Sans', sans-serif;" type="button" value="Continuar"onclick="location.href='file:///C:/Users/mario/Desktop/Proyecto%20Diseño/Les_Blues/Pagar3.html'">
-            <p style="margin-left: 5px;">Continúe con su proceso de pago</p>
-        </div>
         
-        <div>
-            <br><br>
-            <br><br>
-            <br><br>
-            <br><br>
-            <h1>Otro método de pago</h1>
-            <hr>
-            <input style="margin-left: 20px;" type="radio" name="transporte" value="1"> Tarjeta de crédito
-            
-            <img class= "img-fluid" style="height: 30px;width: 50px;margin:28px;" src="assets/img/mastercard.png">
-
-            <img class= "img-fluid" style="height: 30px;width: 50px;margin:28px;" src="assets/img/Former_Visa_(company)_logo.svg.png">
-
-            <img class= "img-fluid" style="height: 30px;width: 50px;margin:28px;" src="assets/img/americanexpress.png">
-            
-            
-
-            <br>
-
-            <input style="margin-left: 20px;"type="radio" name="transporte" value="2"> Tarjeta de débito
-            <div style="margin-left: 35px;">
-            <select name="transporte">
-
-            <option>Escoge un banco</option>
-
-            <option>VISA</option>
-
-            <option>BBVA</option>
-
-            </select>
-            </div>
-
-            <br>
-
-            <input style="margin-left: 20px;"type="radio" name="transporte" value="3"> Net Bank
-            <div style="margin-left: 35px;">
-            <select name="transporte">
-
-            <option>Escoge un banco</option>
-
-            <option>Visa</option>
-
-            <option>BBVA</option>
-
-            </select>
-            </div>
-            <hr>
-            <input style="margin-left: 20px;"type="radio" name="transporte" value="3"> Pago en persona
-            <br>
-            <hr>
-
-        </div>
-
-    </div>
    
+
+    <h4>Selecione método de pago</h4>
+
+<article class="card">
+<div class="card-body p-5">
+
+<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+        <i class="fa fa-credit-card"></i> Tarjeta de crédito</a></li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+        <i class="fa fa-paypal"></i>  Paypal</a></li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+        <i class="fa fa-university"></i> Transferencia bancaria</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade show active" id="nav-tab-card">
+    <p class="alert alert-success">Si hay error o éxito</p>
+    <form role="form">
+    <div class="form-group">
+        <label for="username">Nombre completo (en la tarjeta)</label>
+        <input type="text" class="form-control" name="username" placeholder="" required="">
+    </div> <!-- form-group.// -->
+
+    <div class="form-group">
+        <label for="cardNumber">Número de tarjeta</label>
+        <div class="input-group">
+            <input type="text" class="form-control" name="cardNumber" placeholder="">
+            <div class="input-group-append">
+                <span class="input-group-text text-muted">
+                    <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
+                    <i class="fab fa-cc-mastercard"></i> 
+                </span>
+            </div>
+        </div>
+    </div> <!-- form-group.// -->
+
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="form-group">
+                <label><span class="hidden-xs">Expiración</span> </label>
+                <div class="input-group">
+                    <input type="number" class="form-control" placeholder="MM" name="">
+                    <input type="number" class="form-control" placeholder="YY" name="">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
+                <input type="number" class="form-control" required="">
+            </div> <!-- form-group.// -->
+        </div>
+    </div> <!-- row.// -->
+    <button class="subscribe btn btn-primary btn-block" type="button"> Confirmar  </button>
+    </form>
+</div> <!-- tab-pane.// -->
+<div class="tab-pane fade" id="nav-tab-paypal">
+    <p>Paypal es la manera más fácil de pagar en línea</p>
+    <p>
+    <button type="button" class="btn btn-primary"> <i class="fa fa-paypal"></i> Log in en PayPal </button>
+    </p>
+    <p><strong>Nota:</strong> Si no desea pagar con PayPal seleccione otro método de pago. </p>
+</div>
+
+<div class="tab-pane fade" id="nav-tab-bank">
+    <p>Detalles de la cuanta de banco</p>
+    <dl class="param">
+      <dt>BANCO: </dt>
+      <dd> BBVA Bancomer</dd>
+    </dl>
+    <dl class="param">
+      <dt>Número de cuenta: </dt>
+      <dd> 12345678912345</dd>
+    </dl>
+    <dl class="param">
+      <dt>IBAN: </dt>
+      <dd> 123456789</dd>
+    </dl>
+    <p><strong>Nota:</strong> Si no desea pagar por transferencia bancaria seleccione otro método de pago. </p>
+</div> 
+</div> 
+
+</div> 
+</article> 
+
+
+    </aside>
+</div>
+
+</div> 
+
+
+<br><br>
+
     
 
     <div class="footer-basic" style="height:203px;width:100%;">

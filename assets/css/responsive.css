@@ -7,35 +7,59 @@
   padding: 0px;
 }
 
-.gallery {
--webkit-column-count: 3;
--moz-column-count: 3;
-column-count: 3;
--webkit-column-width: 33%;
--moz-column-width: 33%;
-column-width: 33%; }
-.gallery .pics {
--webkit-transition: all 350ms ease;
-transition: all 350ms ease; }
-.gallery .animation {
--webkit-transform: scale(1);
--ms-transform: scale(1);
-transform: scale(1); }
 
-@media (max-width: 450px) {
-.gallery {
--webkit-column-count: 1;
--moz-column-count: 1;
-column-count: 1;
--webkit-column-width: 100%;
--moz-column-width: 100%;
-column-width: 100%;
-}
+.row {
+	margin-top: 300px;
+	margin-bottom: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+
+
 }
 
-@media (max-width: 400px) {
-.btn.filter {
-padding-left: 1.1rem;
-padding-right: 1.1rem;
+
+/* Create four equal columns that sits next to each other */
+.column {
+	margin-top: 8px;
+  flex: 100%;
+  max-width: 100%;
 }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 250px;
+  align-content: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+html { height: 100%; }
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
+}
+.footer-basic { 
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height:[footer-height] 
 }

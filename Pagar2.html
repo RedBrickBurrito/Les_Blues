@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-size:auto;background-repeat:repeat;background-color:#ffffff;height:1011px;width:100%;min-height: 100%; position: relative;">
+<htmls>
 
 <head>
     <meta charset="utf-8">
@@ -16,19 +16,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/PagarForm.css">
 
 </head>
 
-<body style="margin: 0; margin-bottom: 40px;">
+<body style="background-color: #f1f7fc">
         
-   
+   <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
+            <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
+                <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a><button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1"
+                        style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="width:inherit;">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Pagar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
+                        </ul>
+                        <form class="form-inline mr-auto" target="_self">
+                            <div class="form-group"><label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label><input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;"></div>
+                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="LogIn.html" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="SignUp.html" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
+                </div>
+            </nav>
 
-    <h4>Selecione método de pago</h4>
 
-<article class="card">
-<div class="card-body p-5">
-
-<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+<div class ="signup-clean">
+<form>
+<article class="card-body mx-auto" style="max-width: 700px;">
+<h4 class="card-title mt-3 text-center">Selecciona manera de pago</h4>
+<ul class="nav bg-light nav-pills rounded  nav-fill mb-3" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
         <i class="fa fa-credit-card"></i> Tarjeta de crédito</a></li>
@@ -43,11 +59,10 @@
 <div class="tab-content">
 <div class="tab-pane fade show active" id="nav-tab-card">
     <p class="alert alert-success">Si hay error o éxito</p>
-    <form role="form">
     <div class="form-group">
         <label for="username">Nombre completo (en la tarjeta)</label>
         <input type="text" class="form-control" name="username" placeholder="" required="">
-    </div> <!-- form-group.// -->
+    </div> 
 
     <div class="form-group">
         <label for="cardNumber">Número de tarjeta</label>
@@ -55,8 +70,8 @@
             <input type="text" class="form-control" name="cardNumber" placeholder="">
             <div class="input-group-append">
                 <span class="input-group-text text-muted">
-                    <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
-                    <i class="fab fa-cc-mastercard"></i> 
+                    <i class="fa fa-cc-visa"></i>   <i class="fa fa-cc-amex"></i>   
+                    <i class="fa fa-cc-mastercard"></i> 
                 </span>
             </div>
         </div>
@@ -80,7 +95,6 @@
         </div>
     </div> <!-- row.// -->
     <button class="subscribe btn btn-primary btn-block" type="button"> Confirmar  </button>
-    </form>
 </div> <!-- tab-pane.// -->
 <div class="tab-pane fade" id="nav-tab-paypal">
     <p>Paypal es la manera más fácil de pagar en línea</p>
@@ -89,7 +103,6 @@
     </p>
     <p><strong>Nota:</strong> Si no desea pagar con PayPal seleccione otro método de pago. </p>
 </div>
-
 <div class="tab-pane fade" id="nav-tab-bank">
     <p>Detalles de la cuanta de banco</p>
     <dl class="param">
@@ -107,15 +120,12 @@
     <p><strong>Nota:</strong> Si no desea pagar por transferencia bancaria seleccione otro método de pago. </p>
 </div> 
 </div> 
-
 </div> 
 </article> 
 
-
-    </aside>
+</form>
+</aside>
 </div>
-
-</div> 
 
 
 <br><br>

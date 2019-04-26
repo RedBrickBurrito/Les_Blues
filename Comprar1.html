@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LesBluesDesign</title>
+    <title>Compra</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -17,125 +17,199 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Comprar.css">
 
 </head>
 
-<body style="margin: 0; margin-bottom: 40px;">
-        <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
+<body style="background-color: #f1f7fc">
+         <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
             <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
                 <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a><button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1"
                         style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1" style="width:inherit;">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Comprar1.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;" onclick="location.href='file:///C:/Users/mario/Desktop/Proyecto%20Dise%C3%B1o/Les_Blues/Pagar.html'">Paga</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Pagar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
                         </ul>
                         <form class="form-inline mr-auto" target="_self">
                             <div class="form-group"><label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label><input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;"></div>
-                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="#" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif; ">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif; ">Sign Up</a></div>
+                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="LogIn.html" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="SignUp.html" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
                 </div>
-            </nav>  
+            </nav>
+
+    <main role="main" style = "font-family: 'Open Sans',sans-serif;">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron heading" style ="font-family: 'Archivo',sans-serif;">Explora las pinturas</h1>
+                <p class="lead text-muted" style ="font-family: 'Open Sans',sans-serif;"> Si te gusta alguna simplemente elige comprar.</p>
+            </div>
+        </section>
+
+        <div class ="album py-5 bg-light">
+            <div class="container">
+                <div class ="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            
+                                <title>Starry Night</title>
+                                <img class= "img-fluid" style="height: 256px;width: 100%;" src="assets/img/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"/>
+                            <div class="card-body">
+              <p class="card-text">La noche estrellada es un cuadro pintado en el año 1889 por el artista neerlandés Vincent van Gogh (1853-1890). Es considerado uno de los cuadros más importantes del pintor por su estilo único y original, el cual marcó un punto de inflexión en el arte postimpresionista.<form>
+          <p class="clasificacion">
+            <input id="radio1" type="radio" name="estrellas" value="5" style="display: none;"><!--
+            --><label for="radio1">★</label><!--
+            --><input style="display: none;"id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" style="display: none;" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" style="display: none;" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" style="display: none;" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+        </form></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: green; color: white;border-color: green;">Comprar</button>
+                </div>
+                <small class="text-muted">Disponible</small>
+              </div>
+            </div>
         </div>
     </div>
 
-    <div>
-    	<h1 style="float: left; margin-left: 20px;">Pintura</h1>  
-    	
-    	<br>
-    	<br>
-    	<hr style="border-width: 2px;">
+    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                                <title>La Mona Lisa (La Gioconda)</title>
+                                <img class= "img-fluid" style="height: 512px;width: 100%;" src="assets/img/Mona_Lisa.jpg"/>
+                            <div class="card-body">
+              <p class="card-text">La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci.       <form>
+          <p class="clasificacion">
+            <input id="radio1" type="radio" name="estrellas" value="5" style="display: none;"><!--
+            --><label for="radio1">★</label><!--
+            --><input style="display: none;"id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" style="display: none;" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" style="display: none;" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" style="display: none;" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+        </form></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: green; color: white;border-color: green;" onclick="location.href = 'Pagar.html';">Comprar</button>
+                </div>
+                <small class="text-muted">Disponible</small>
+              </div>
+            </div>
+        </div>
     </div>
-    <div style="width: 50%; float: left;">
-    	<div align="center">
-    	<img class= "img-fluid" style="height: 500px;width: 350px;margin:28px;" src="assets/img/Mona_Lisa.jpg"/>
-    	</div>
-    	<div align="center">
-    		<table style="width:30%; margin-left: 28px;">
 
-	            <tr>
-	                <th>Autor/pseudónimo:</th>
-	                <th>Leonardo da Vinci</th>
-	            </tr>
-	            <tr>
-	                <th>Año:</th>
-	                <th>1503-1519</th>
-	            </tr>
-	            <tr>
-	                <th>Precio:</th>
-	                <th>$713 millones de dólares</th>
-	            </tr>
-	            <tr>
-	                <th>Técnica:</th>
-	                <th>Sfumato</th>
-	            </tr>
-	            <tr>
-	                <th>Corriente:</th>
-	                <th>Renacentista</th>
-	            </tr>
-	            <tr>
-	                <th>Medidas:</th>
-	                <th>77 × 53 cm</th>
-	            </tr>
+    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                                <title>Meisje met de parel</title>
+                                <img class= "img-fluid" style="height: 356px;width: 100%;" src="assets/img/300px-Meisje_met_de_parel.jpg"/>
+                            <div class="card-body">
+              <p class="card-text">Girl with a Pearl Earring is an oil painting by Dutch Golden Age painter Johannes Vermeer. It is a tronie of a girl wearing a headscarf and a pearl earring. The painting has been in the collection of the Mauritshuis in The Hague since 1902.       <form>
+          <p class="clasificacion">
+            <input id="radio1" type="radio" name="estrellas" value="5" style="display: none;"><!--
+            --><label for="radio1">★</label><!--
+            --><input style="display: none;"id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" style="display: none;" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" style="display: none;" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" style="display: none;" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </p>
+        </form></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: green; color: white;border-color: green;" onclick="location.href = 'Pagar.html';">Comprar</button>
+                </div>
+                <small class="text-muted">Disponible</small>
+              </div>
+            </div>
+        </div>
+    </div>
 
-        	</table>    		
-    	</div>
-    </div> 
-    <div >
-    	<h1>La Mona Lisa (La Gioconda)</h1> <h4>Reseña</h4> <p>La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci. Fue adquirida por el rey Francisco I de Francia a comienzos del siglo XVI y desde entonces es propiedad del Estado Francés.
-    	Es un óleo sobre tabla de álamo de 77 × 53 cm, pintado entre 1503 y 1519,3​ y retocado varias veces por el autor. Se considera el ejemplo más logrado de sfumato, técnica muy característica de Leonardo, si bien actualmente su colorido original es menos perceptible por el oscurecimiento de los barnices. El cuadro está protegido por múltiples sistemas de seguridad y ambientado a temperatura estable para su preservación óptima.4​ Es revisado constantemente para verificar y prevenir su deterioro. </p>
+    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Mona Lisa</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                            </svg>
+                            <div class="card-body">
+              <p class="card-text">La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: green; color: white;border-color: green;">Comprar</button>
+                </div>
+                <small class="text-muted">Disponible</small>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Mona Lisa</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                            </svg>
+                            <div class="card-body">
+              <p class="card-text">La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: green; color: white;border-color: green;">Comprar</button>
+                </div>
+                <small class="text-muted">Disponible</small>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                <title>Mona Lisa</title>
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                            </svg>
+                            <div class="card-body">
+              <p class="card-text">La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: green; color: white;border-color: green;">Comprar</button>
+                </div>
+                <small class="text-muted">Disponible</small>
+              </div>
+            </div>
+        </div>
     </div>
     
+</div>
+</div>
+</div>
+
     
-    <div style="text-align: center;">
-    	
-    	<br>
-    	<input name="button2" type="button" 
-			onclick='alert("Su cumpra se ha guardado en su carrito de compras.")' value=" Agregar al carrito " style="background-color:rgb(125,11,4);color: white;font-family:'Open Sans', sans-serif; border-radius: 20px;font-size: 16px; color: #fff; box-shadow: none; border: none;text-shadow: none;" /><br><br>
-		<h4 style="text-align: left; ">Valórala</h4>
+    </main>
 
-		<div style="text-align: left;">
-		<form>
-		  <p class="clasificacion">
-		    <input id="radio1" type="radio" name="estrellas" value="5" style="display: none;"><!--
-		    --><label for="radio1">★</label><!--
-		    --><input style="display: none;"id="radio2" type="radio" name="estrellas" value="4"><!--
-		    --><label for="radio2">★</label><!--
-		    --><input id="radio3" style="display: none;" type="radio" name="estrellas" value="3"><!--
-		    --><label for="radio3">★</label><!--
-		    --><input id="radio4" type="radio" name="estrellas" style="display: none;" value="2"><!--
-		    --><label for="radio4">★</label><!--
-		    --><input id="radio5" style="display: none;" type="radio" name="estrellas" value="1"><!--
-		    --><label for="radio5">★</label>
-		  </p>
-		</form>
-		</div>
-		<h4 style="text-align: left; ">¡Haz tu comentario!</h4>
-		<input type="text" name="" align="left" style="width: 1165px; height: 100px; margin-right: 20px;"><br><br><br>
-		<div style="text-align: right;">
-		<input name="button3" type="button" 
-			onclick='alert("Su comentario se ha guardado.")' value=" Comentar " style="background-color:rgb(125,11,4);color: white;font-family:'Open Sans', sans-serif; border-radius: 20px;font-size: 16px; color: #fff; box-shadow: none; border: none;text-shadow: none; text-align: right; margin-right: 20px;" />
-		</div>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-
-    	
-
-    </div>
-
-    <div class="footer-basic" style="height:203px;width:100%;">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Les-Blues © 2019</p>
-        </footer>
-    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>

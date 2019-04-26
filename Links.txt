@@ -1,1 +1,39 @@
 https://bootsnipp.com/snippets/5Mkl8
+
+
+
+
+<div class="container-fluid myphoto-section bs-myphoto-light">
+<div class="conatiner-fluid myphoto-section bg-myphoto-light">
+<div class="container">
+<h3>Gallery</h3>
+<div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+<div class="carousel-inner" role="listbox">
+<div style="height:400px" class="carousel-item active">
+<img class="d-block img-fluid" src="img/adult-attractive-beautiful-2060905.jpg">
+<div class="carousel caption"> Mujer bonita</div>
+</div>
+<div style="height:400px" class="carousel-item ">
+<img class="d-block img-fluid" src="img/animal-beautiful-woman-bed-2121862.jpg">
+<div class="carousel caption"> Mujer bonita con un perro</div>
+</div>
+<div style="height:400px" class="carousel-item ">
+<img class="d-block img-fluid" src="img/action-black-and-white-black-and-white-2157168.jpg">
+<div class="carousel caption"> Entrando al agua</div>
+</div>
+</div>
+<a class="left carousel-control" href="gallery-carousel" role="button" data-slide="prev">
+<span class="icon-prev" aria-hidden="true"></span>
+</a>
+<a class="right carousel-control" href="gallery-carousel" role="button" data-slide="next">
+<span class="icon-next" aria-hidden="true"></span>
+</a>
+<ol class="carousel-indicators">
+<li data-target="#gallery-carousel" data-slide-to="0" class="active"></li>
+<li data-target="#gallery-carousel" data-slide-to="1" ></li>
+<li data-target="#gallery-carousel" data-slide-to="2"></li>
+</ol>
+</div>
+</div>
+</div>
+</div>

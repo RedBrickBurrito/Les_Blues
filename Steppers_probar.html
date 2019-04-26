@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-size:auto;background-repeat:repeat;background-color:#ffffff;height:1011px;width:100%;min-height: 100%; position: relative;">
+<htmls>
 
 <head>
     <meta charset="utf-8">
@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/Steppers_Probar_css.css"
+    <link rel="stylesheet" href="assets/css/PagarForm.css">
+    <link rel="stylesheet" href="assets/css/Steppers_Probar_css.css">
 
 </head>
 
-<body style="margin: 0; margin-bottom: 40px;">
-        <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
+<body style="background-color: #f1f7fc">
+        
+   <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
             <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
                 <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a><button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1"
                         style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
@@ -30,18 +32,17 @@
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Pagar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
                         </ul>
                         <form class="form-inline mr-auto" target="_self">
                             <div class="form-group"><label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label><input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;"></div>
-                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="#" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
+                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="LogIn.html" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="SignUp.html" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
                 </div>
-            </nav>  
-        </div>
-    </div>
-  
+            </nav>
 
-<div class="container"></div>,<div class="container">
+
+
+           <div class="container"></div>,<div class="container">
   
 <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
@@ -66,16 +67,16 @@
         <div class="col-md-12">
           <h3> Step 1</h3>
           <div class="form-group">
-            <label class="control-label">First Name</label>
-            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name">
+            <label class="control-label">Nombre de la pintura</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Nombre">
           </div>
           <div class="form-group">
-            <label class="control-label">Last Name</label>
-            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name">
+            <label class="control-label">Estilo de pintura</label>
+            <input maxlength="100" type="text" required="required" class="form-control" placeholder="Estilo">
           </div>
           <div class="form-group">
-            <label class="control-label">Address</label>
-            <textarea required="required" class="form-control" placeholder="Enter your address"></textarea>
+            <label class="control-label">Autor</label>
+            <textarea required="required" class="form-control" placeholder="Nombre del autor"></textarea>
           </div>
           <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
         </div>
@@ -86,12 +87,12 @@
         <div class="col-md-12">
           <h3> Step 2</h3>
           <div class="form-group">
-            <label class="control-label">Company Name</label>
-            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name">
+            <label class="control-label">Descripcion de la pintura</label>
+            <input maxlength="400"type="text" required="required" class="form-control" placeholder="Descripcion">
           </div>
           <div class="form-group">
-            <label class="control-label">Company Address</label>
-            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address">
+            <label class="control-label">Precio</label>
+            <input maxlength="200" type="text" required="required" class="form-control" placeholder="Precio">
           </div>
           <button class="btn btn-primary prevBtn btn-lg pull-left" type="button">Previous</button>
           <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Next</button>
@@ -103,6 +104,7 @@
         <div class="col-md-12">
           <h3> Step 3</h3>
           <button class="btn btn-primary prevBtn btn-lg pull-left" type="button">Previous</button>
+
           <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
         </div>
       </div>

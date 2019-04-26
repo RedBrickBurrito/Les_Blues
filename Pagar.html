@@ -19,28 +19,26 @@
 
 </head>
 
-<body style="margin: 0; margin-bottom: 40px;">
+<body style="margin: 0; margin-bottom: 40px;  font-family:Open Sans, sans-serif;">
         <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
             <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
                 <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a><button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1"
                         style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1" style="width:inherit;">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Comprar1.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="Pagar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
                         </ul>
                         <form class="form-inline mr-auto" target="_self">
                             <div class="form-group"><label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label><input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;"></div>
-                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="#" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
+                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="#" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif; ">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif; ">Sign Up</a></div>
                 </div>
             </nav>  
         </div>
     </div>
-    <div>
-       
-        <h2 style="margin: 5px;">Carrito de compras</h2>
+
 
         
         <table style="width:100%">
@@ -93,6 +91,56 @@
 
     </div>
     
+
+    <div class="container">
+    <h1 style=" font-family:Archivo, sans-serif;" align="text-center">Carrito de Compras</h1>
+    <br>
+    <table id="cart" class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="width:50%;">Pintura</th>
+                            <th style="width:10%;">Precio</th>
+                            <th style="width:8%;">Cantidad</th>
+                            <th style="width:22%;" class="text-center">Subtotal</th>
+                            <th style="width:10%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Product">
+                                <div class="row">
+                                    <div class="col-sm-2 hidden-xs"><img src="Mona_Lisa_TN.jpg" alt="Mona Lisa" class="img-responsive"/></div>
+                                    <div class="col-sm-10">
+                                        <h4 class="nomargin" style="margin-left: 15px; font-family:Open Sans, sans-serif;">Mona Lisa</h4>
+                                        <p style="margin-left: 15px; font-family:Open Sans, sans-serif;">La Mona Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-th="Price" style = " font-family:Open Sans, sans-serif;">$1.99</td>
+                            <td data-th="Quantity">
+                                <input type="number" class="form-control text-center" value="1">
+                            </td>
+                            <td data-th="Subtotal" class="text-center" style =" font-family:Open Sans, sans-serif;">1.99</td>
+                            <td class="actions" data-th="">
+                                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>                                
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="visible-xs">
+                            <td class="text-center" style=" font-family:Open Sans, sans-serif;"><strong>Total 1.99</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="Index.html" class="btn btn-warning" style="color: white; background-color:rgb(125,11,4); border-color: rgb(125,11,4);"><i class="fa fa-angle-left"></i> Continua Comprando</a></td>
+                            <td colspan="2" class="hidden-xs"></td>
+                            <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+                            <td><a href="Pagar2.html" class="btn btn-success btn-block">Pagar <i class="fa fa-angle-right"></i></a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+</div>
+
 
     <div class="footer-basic" style="height:203px;width:100%;">
         <footer>

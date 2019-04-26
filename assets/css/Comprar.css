@@ -1,0 +1,47 @@
+.row {
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+
+
+.container {
+
+    max-width: 1140px;
+
+}
+
+.col-md-4 {
+
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+
+}
+
+.shadow-sm {
+
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+
+}
+
+.jumbotron {
+
+    padding: 2rem 1rem;
+    margin-bottom: 0rem;
+    background-color: #e9ecef;
+    border-radius: 0rem;
+
+}
+
+.bg-light {
+
+    background-color: #f1f7fc !important;
+
+}

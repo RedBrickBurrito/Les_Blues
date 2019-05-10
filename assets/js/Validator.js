@@ -2,6 +2,7 @@
 function processForm() {
 	clearFeedback();
     validateInput();
+    alert("Tu cuenta ha sido creada exitosamente!!!")
     return false;
 }
 
@@ -42,19 +43,19 @@ function validateInput() {
 }
 
 function validateFirstname() {
-    var regex = /^[A-Z]{1,30}$/i;
+    var regex = /^[A-Za-z]+$/i;
     var firstname = $("#firstname").val();
     return regex.test(firstname);
 }
 
 function validateEmail() {
-	var regex = /^(?:(?:[\w`~!#$%^&*\-=+;:{}'|,?\/]+(?:(?:\.(?:"(?:\\?[\w`~!#$%^&*\-=+;:{}'|,?\/\.()<>\[\] @]|\\"|\\\\)*"|[\w`~!#$%^&*\-=+;:{}'|,?\/]+))*\.[\w`~!#$%^&*\-=+;:{}'|,?\/]+)?)|(?:"(?:\\?[\w`~!#$%^&*\-=+;:{}'|,?\/\.()<>\[\] @]|\\"|\\\\)+"))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$/gm;
+	var regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 	var email = $("#email").val();
 	return regex.test(email);
 }
 
 function validateLastname() {
-    var regex = /^[A-Z]{1,30}$/i;
+    var regex = /^[A-Za-z]+$/;
     var lastname = $("#lastname").val();
     return regex.test(lastname);
 }

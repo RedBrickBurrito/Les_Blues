@@ -11,8 +11,8 @@ for(var i= 0; i < removeCartItemButtons.length;i++)
 
 function updateCartTotal() {
 
-const el = document.querySelector('#cart');
-var price = el.price
+var cartItemContainer = document.getElementsByClassName('table table-hover table-condensed')[0]
+
 
 console.log(price)
 

@@ -23,107 +23,114 @@
 
 <body style="background-color: #f1f7fc">
     <div class="visible header-dark" style="height:10%;background-color:rgba(68,68,68,0);width:100%;">
-            <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
-                <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a><button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1"
-                        style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-1" style="width:inherit;">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="Comprar1.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="Steppers_probar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="aprender.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="Pagar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
-                        </ul>
-                        <form class="form-inline mr-auto" target="_self">
-                            <div class="form-group"><label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label><input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;"></div>
-                        </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="LogIn.html" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
+        <nav class="navbar navbar-light navbar-expand-md sticky-top bg-white d-flex d-print-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex navigation-clean-search" style="box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color:#0a0a0a;color:rgb(0,0,0);width:100%;min-width:0;height:10%;">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html" style="color:rgb(0,0,0);font-family:Archivo, sans-serif;">Les-Blues</a>
+                <button class="navbar-toggler d-xl-none flex-column align-items-start align-content-start" data-toggle="collapse" data-target="#navcol-1" style="color:rgb(0,0,0);width:56px;height:42px;"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon" style="color:rgb(0,0,0);"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="width:inherit;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Comprar1.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Compra</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Steppers_probar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Vende</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="aprender.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Aprende</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Pagar.html" style="color:rgb(67,64,64);font-family:'Open Sans', sans-serif;">Paga</a></li>
+                    </ul>
+                    <form class="form-inline mr-auto" target="_self">
+                        <div class="form-group">
+                            <label for="search-field"><i class="fa fa-search" style="color:rgb(0,0,0);"></i></label>
+                            <input class="form-control search-field" type="search" name="search" id="search-field" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">
+                        </div>
+                    </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="LogIn.html" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="#" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
+            </div>
+        </nav>
+
+        <div class="signup-clean">
+
+            <div class="info">
+                <div id="error">
+                    <ul id="errorList">
+                    </ul>
                 </div>
-            </nav>
 
-   
-<div class ="signup-clean">
+                <div id="success">
+                    <ul id="messageList">
+                    </ul>
+                </div>
 
-    <div class = "info">
-  <div id="error">
-            <ul id="errorList">
-            </ul>
-        </div>
+                <form action="" onsubmit="return processForm()">
+                    <article class="card-body mx-auto" style="max-width: 400px;font-family: 'Archivo',sans-serif; font-size: 16px;">
+                        <h4 class="card-title mt-3 text-center" style="font-family: 'Archivo',sans-serif; font-size: 24px;">Crear Cuenta</h4>
+                        <p class="text-center" style="font-family: 'Open-sans',sans-serif; font-size: 16px;">Empieza creando tu cuenta gratuita</p>
+                        <p>
+                            <a href="" class="btn btn-block btn-twitter"> <i class="icon ion-social-twitter"></i>   Login via Twitter</a>
+                            <a href="" class="btn btn-block btn-facebook"> <i class="icon ion-social-facebook"></i>   Login via facebook</a>
+                        </p>
+                        <p class="divider-text">
+                            <span class="bg-light">O también</span>
+                        </p>
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                            </div>
+                            <input name="firstname" class="form-control" placeholder="Nombre completo" type="text" autofocus required>
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                            </div>
+                            <input name="email" class="form-control" placeholder="Email" type="email" required>
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                            </div>
+                            <select class="custom-select" style="max-width: 120px;">
+                                <option selected="">+52</option>
+                                <option value="1">+972</option>
+                                <option value="2">+198</option>
+                                <option value="3">+701</option>
+                            </select>
+                            <input name="telefono" class="form-control" placeholder="Teléfono" type="text" required>
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                            </div>
+                            <select class="form-control">
+                                <option selected=""> Selecciona tu profesión</option>
+                                <option>Diseñador</option>
+                                <option>Estudiante</option>
+                                <option>Artista</option>
+                            </select>
+                        </div>
+                        <!-- form-group end.// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Crear contraseña" type="password" required>
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                            </div>
+                            <input class="form-control" placeholder="Repetir contraseña" type="password" required>
+                        </div>
+                        <!-- form-group// -->
+                        <div class="form-group">
+                            <button type="submit" value="Submit" class="btn btn-primary btn-block" style="background-color:rgb(125,11,4)"> Crear Cuenta </button>
+                        </div>
+                        <!-- form-group// -->
+                        <p class="text-center">Ya tienes una cuenta? <a href="LogIn.html">Log In</a> </p>
+                </form>
+                </article>
+            </div>
 
-        <div id="success">
-            <ul id="messageList">
-            </ul>
-        </div>
-
-    <form action="" onsubmit="return processForm()">
-        <article class="card-body mx-auto" style="max-width: 400px;font-family: 'Archivo',sans-serif; font-size: 16px;">
-    <h4 class="card-title mt-3 text-center" style="font-family: 'Archivo',sans-serif; font-size: 24px;">Crear Cuenta</h4>
-    <p class="text-center" style="font-family: 'Open-sans',sans-serif; font-size: 16px;">Empieza creando tu cuenta gratuita</p>
-    <p>
-        <a href="" class="btn btn-block btn-twitter"> <i class="icon ion-social-twitter"></i>   Login via Twitter</a>
-        <a href="" class="btn btn-block btn-facebook"> <i class="icon ion-social-facebook"></i>   Login via facebook</a>
-    </p>
-    <p class="divider-text">
-        <span class="bg-light">O también</span>
-    </p>
-    <div class="form-group input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-         </div>
-        <input name="firstname" class="form-control" placeholder="Nombre completo" type="text" autofocus required>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-         </div>
-        <input name="email" class="form-control" placeholder="Email" type="email" required>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-        </div>
-        <select class="custom-select" style="max-width: 120px;">
-            <option selected="">+52</option>
-            <option value="1">+972</option>
-            <option value="2">+198</option>
-            <option value="3">+701</option>
-        </select>
-        <input name="telefono" class="form-control" placeholder="Teléfono" type="text" required>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-        </div>
-        <select class="form-control">
-            <option selected=""> Selecciona tu profesión</option>
-            <option>Diseñador</option>
-            <option>Estudiante</option>
-            <option>Artista</option>
-        </select>
-    </div> <!-- form-group end.// -->
-    <div class="form-group input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-        </div>
-        <input class="form-control" placeholder="Crear contraseña" type="password" required>
-    </div> <!-- form-group// -->
-    <div class="form-group input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-        </div>
-        <input class="form-control" placeholder="Repetir contraseña" type="password" required>
-    </div> <!-- form-group// -->                                      
-    <div class="form-group">
-        <button type="submit" value = "Submit" class="btn btn-primary btn-block" style = "background-color:rgb(125,11,4)"> Crear Cuenta  </button>
-    </div> <!-- form-group// -->      
-    <p class="text-center">Ya tienes una cuenta? <a href="LogIn.html">Log In</a> </p>                                                                 
-</form>
-</article>
-</div> 
-
-
-    
-    <script src="assets/js/Validator.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/Validator.js"></script>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

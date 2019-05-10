@@ -38,8 +38,20 @@
                         </form><span class="navbar-text" style="color:rgba(0,0,0,0.5);"><a href="LogIn.html" class="login" style="color:rgb(0,0,0);font-family:'Open Sans', sans-serif;">Log In</a></span><a class="btn btn-light action-button" role="button" href="SignUp.html" style="background-color:rgb(125,11,4);font-family:'Open Sans', sans-serif;">Sign Up</a></div>
                 </div>
             </nav>
+
+ <div class = "info">
+  <div id="error">
+            <ul id="errorList">
+            </ul>
+        </div>
+
+        <div id="success">
+            <ul id="messageList">
+            </ul>
+        </div>
+
     <div class="login-clean">
-        <form method="post">
+        <form method="post" action = "" onSubmit="return processForm()">
             <h2 class="sr-only">Login Form</h2>
             <div class="illustration"><i class="icon ion-android-person" style="color:rgb(135,134,134);"></i></div>
             <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" style="font-family: 'Open-sans', sans-serif;font-size: 16px;"></div>
@@ -48,6 +60,7 @@
     </div>
 
     
+    <script src="assets/js/Validator.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
